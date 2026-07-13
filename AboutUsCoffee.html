@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - R&R Cafe</title>
+    
+    <!-- Bootstrap 5.3.3 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN (For the hamburger toggle or branding accents) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <style>
+
+body{
+    background: #F8F1E7;
+    color:#4E342E;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.custom-navbar{
+    background: linear-gradient(90deg,#3E2723,#5D4037) !important;
+    border-bottom:4px solid #D7A86E;
+}
+
+.custom-navbar .navbar-brand{
+    color:#FFE0B2 !important;
+    font-size:1.6rem;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.custom-navbar .nav-link{
+    color:#FFF8F0 !important;
+    transition:all .3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active{
+    color:#FFD180 !important;
+}
+
+
+.custom-header{
+    background:
+    linear-gradient(rgba(62, 39, 35, 0.192),
+    rgba(62,39,35,.75)),
+    url("baristas.jfif") no-repeat center center;
+
+    background-size:cover;
+    background-position:center;
+    color:white !important;
+    border-radius:20px;
+    min-height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.custom-header h1{
+    color:#FFE0B2 !important;
+    font-size:3rem;
+    font-weight:700;
+}
+
+.custom-header p{
+    color:#FFF3E0;
+    font-size:1.2rem;
+}
+
+
+.card{
+    background:#FFFDF9;
+    border:none;
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.98s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.card-title{
+    color:#5D4037;
+}
+
+/* Sidebar Accent */
+
+.custom-sidebar-accent{
+    border-top:5px solid #C49A6C !important;
+}
+
+/* Inner Boxes */
+
+.bg-light{
+    background:#F6E9DA !important;
+}
+
+/* Text */
+
+.text-primary{
+    color:#6F4E37 !important;
+}
+
+.text-success{
+    color:#8B5E3C !important;
+}
+
+.text-secondary{
+    color:#795548 !important;
+}
+
+/* Code */
+
+code{
+    background:#F4E6D8;
+    color:#8B4513 !important;
+    padding:3px 7px;
+    border-radius:5px;
+    font-weight:600;
+}
+
+/* Images */
+
+img{
+    border-radius:15px;
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.02);
+}
+
+/* Horizontal Rule */
+
+hr{
+    border-color:#C49A6C;
+}
+
+/* Buttons */
+
+.btn{
+    background:#6F4E37;
+    color:white;
+    border:none;
+}
+
+.btn:hover{
+    background:#8D6E63;
+    color:white;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .custom-header{
+        text-align:center;
+        min-height:240px;
+    }
+
+    .custom-header h1{
+        font-size:2.2rem;
+    }
+
+    .custom-header p{
+        font-size:1rem;
+    }
+
+}
+</style>
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-md navbar-dark custom-navbar shadow-sm sticky-top mb-4">
+    <div class="container">
+        <!-- Brand/Logo Link Header -->
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-cup-hot-fill me-2"></i>R&R Cafe
+        </a>
+        
+        <!-- Mobile Toggle Button (Hamburger Menu) -->
+        <button class="navbar-toggler border-0" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#mainDepartmentNavbar" 
+                aria-controls="mainDepartmentNavbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar Content Container Box Component -->
+        <div class="collapse navbar-collapse" id="mainDepartmentNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="indexstore.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutUsCoffee.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="Sign-Up.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    
+    <!-- Header Block Component Layout -->
+    <div class="custom-header text-center text-md-start p-4 p-md-5 rounded-3 mb-4 shadow-sm">
+        <h1 class="fw-bold mb-2">Coffee Delivered to Your Door</h1>
+        <p class="lead mb-0">Join us for the perfect cup of coffee, delivered right to your doorstep.s</p>
+    </div>
+
+    <div class="card border-0 shadow-sm mb-4" style="border-left: 5px solid #833c02 !important;">
+        <div class="card-body p-4">
+            <h3 class="card-title fw-bold text-dark mb-3">
+                <i class="bi bi-check-square me-2 text-success"></i>
+                About Us 
+            </h3>
+    
+            <div class="row g-3">
+                <!-- Core Navbar Container Rule Explanation -->
+                <div class="col-12 col-md-10">
+                    <div class="p-3 bg-light rounded-3 h-100">
+                        <p class="small text-muted mb-0">
+                            Welcome to <strong>R&R Cafe</strong>, where every cup of coffee and every meal is made to help you <strong>Rest & Recharge</strong>.
+                            At R&R Cafe, we believe that a great café is more than just a place to eat or drink—it's a place to connect, relax, and create lasting memories. Whether you're catching up with friends, working on your next big idea, or simply taking a break from a busy day, we strive to provide a warm, welcoming space that feels like home.
+                            We are passionate about serving freshly brewed coffee, handcrafted beverages, and delicious food made with quality ingredients. Every item on our menu is prepared with care to ensure every visit is enjoyable and satisfying.
+                            Our mission is simple: to provide exceptional food, outstanding service, and a comfortable atmosphere where everyone can rest, recharge, and leave with a smile.
+                            Thank you for choosing R&R Cafe. We look forward to serving you and becoming part of your everyday moments.
+                            
+                            <strong>R&R Cafe - Rest, Recharge, and Enjoy.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10">
+                    <div class="p-3 bg-light rounded-3 h-100">
+                        <p class="small text-muted mb-0">
+                            Our café is designed to be more than just a place to dine. 
+                            It is a gathering place where friends reconnect, families celebrate special 
+                            moments, students find a comfortable place to study, professionals meet for business,
+                            and individuals enjoy peaceful moments alone.
+                        </p>
+                    </div>
+                </div>
+                 <div class="col-12 col-md-10">
+                    <div class="p-3 bg-light rounded-3 h-100">
+                        <p class="small text-muted mb-0">
+                            Customer satisfaction is at the center of everything we do. 
+                            We are committed to providing excellent service, maintaining 
+                            a clean and welcoming environment, and ensuring that every guest
+                            leaves with a smile. Our team is passionate about creating meaningful
+                            experiences through friendly service, attention to detail, and a genuine
+                            love for hospitality.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Bootstrap 5 JavaScript Bundle via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
